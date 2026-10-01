@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Valentin · Apex4Coder</title>
+<meta name="description" content="Valentin (Apex4Coder) — Python developer building bridges for AI coding tools. Author of ClodKey.">
+<meta property="og:title" content="Valentin · Apex4Coder">
+<meta property="og:description" content="Python developer building bridges for AI coding tools.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%23ff3e3e' font-family='Arial' font-weight='bold'%3EA4%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="prog"></div>
+<nav id="nav"><div class="wrap">
+  <a href="#top" class="logo"><i>A4</i>Apex4Coder</a>
+  <div class="links">
+    <a href="#project" data-i="nav.project">Project</a>
+    <a href="#opus" data-i="nav.opus">Opus watch</a>
+    <a href="#about" data-i="nav.about">About</a>
+    <a href="#coffee" data-i="nav.coffee">Coffee</a>
+  </div>
+  <div class="lang" id="lang"><button data-l="en">EN</button><button data-l="ru">RU</button><button data-l="es">ES</button></div>
+</div></nav>
+
+<header class="hero wrap" id="top">
+  <span class="pill"><span class="dot"></span><b data-i="hero.badge">Open to collab</b><span data-i="hero.pill">Python · AI tooling · Automation</span></span>
+  <h1 id="h1">Bridges for <em>AI coding</em> tools</h1>
+  <p class="lead" data-i="hero.lead">I'm Valentin, a Python developer. I build relays and key managers that let different AI stations work inside the editor you actually use.</p>
+  <p class="lead" style="margin-top:10px"><span class="typed" id="typed"></span><span class="caret"></span></p>
+  <div class="cta">
+    <a class="btn dark mag" href="https://github.com/Apex4Coder/ClodKey"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.870.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.590.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0z"/></svg><span data-i="cta.clodkey">ClodKey on GitHub</span></a>
+    <a class="btn mag" href="https://t.me/GPCProject"><svg viewBox="0 0 24 24" fill="#229ED9"><path d="M9.04 15.3l-.38 5.3c.54 0 .78-.23 1.06-.51l2.55-2.44 5.28 3.87c.97.53 1.65.25 1.91-.9l3.46-16.2c.31-1.43-.52-1.99-1.46-1.64L1.12 10.6c-1.39.54-1.37 1.32-.24 1.67l5.2 1.62L18.2 6.3c.57-.38 1.09-.17.66.21z"/></svg>Telegram</a>
+    <button class="btn red mag" data-coffee><span>☕</span><span data-i="cta.coffee">Buy me a coffee</span></button>
+  </div>
+  <div class="float" aria-hidden="true">
+    <div class="mini"><span class="ic">🔑</span><div>System profile<small>locked · default</small></div><span class="tag">applied</span></div>
+    <div class="mini"><span class="ic">🌉</span><div>Zoo Bridge<small>127.0.0.1:33110</small></div><span class="tag">running</span></div>
+    <div class="mini"><span class="ic">🟣</span><div>claude-opus<small>model check</small></div><span class="tag v" id="floatOpus">live</span></div>
+  </div>
+</header>
+
+<section id="project"><div class="wrap">
+  <div class="reveal"><div class="eyebrow" data-i="p.eyebrow">Main project</div>
+  <h2 data-i="p.title">ClodKey — one key, any editor</h2>
+  <p class="sub" data-i="p.sub">Some API stations accept requests only in the Claude CLI format. ClodKey's Zoo Bridge translates that format, so the same key works as a regular provider in Zoo Code / Roo Code.</p></div>
+  <div class="card spot proj reveal">
+    <div class="l">
+      <h3>ClodKey <span>MIT · Windows</span></h3>
+      <ul class="feat">
+        <li data-i="p.f1">Tray key manager for Claude CLI — no installer, no console windows</li>
+        <li data-i="p.f2">Profiles with a locked System default, one-click apply</li>
+        <li data-i="p.f3">Keys encrypted with Windows DPAPI</li>
+        <li data-i="p.f4">Built-in model check — see what the station serves right now</li>
+        <li data-i="p.f5">Light / dark, English by default · ru · zh · es</li>
+      </ul>
+      <a class="btn dark mag" href="https://github.com/Apex4Coder/ClodKey"><span data-i="p.open">Open repository</span> →</a>
+    </div>
+    <div class="r">
+      <svg class="relay" viewBox="0 0 420 210" aria-label="Zoo Code to Zoo Bridge to Claude CLI station">
+        <path id="w1" class="wire" d="M120 105 L160 105"/>
+        <path id="w2" class="wire" d="M260 105 L300 105"/>
+        <g class="node"><rect x="6" y="70" width="114" height="70" rx="12"/><text x="63" y="100" text-anchor="middle">Zoo / Roo Code</text><text class="s" x="63" y="118" text-anchor="middle">OpenAI format</text></g>
+        <g class="node mid"><rect x="160" y="62" width="100" height="86" rx="14"/><text x="210" y="98" text-anchor="middle">Zoo Bridge</text><text class="s" x="210" y="116" text-anchor="middle">:33110</text><text class="s" x="210" y="131" text-anchor="middle">format relay</text></g>
+        <g class="node"><rect x="300" y="70" width="114" height="70" rx="12"/><text x="357" y="100" text-anchor="middle">CLI-format station</text><text class="s" x="357" y="118" text-anchor="middle">agentrouter.org</text></g>
+        <circle r="4" class="pk"><animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#w1"/></animateMotion></circle>
+        <circle r="4" class="pk"><animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite"><mpath href="#w2"/></animateMotion></circle>
+        <circle r="4" class="pk2"><animateMotion dur="2.4s" begin=".6s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#w2"/></animateMotion></circle>
+        <circle r="4" class="pk2"><animateMotion dur="2.4s" begin="1.8s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#w1"/></animateMotion></circle>
+        <text class="s" x="210" y="185" text-anchor="middle" data-i="p.diag">request → translate → response</text>
+      </svg>
+      <div class="compat">
+        <div><span>Claude CLI</span><span class="ok" data-i="p.tested">tested</span></div>
+        <div><span>Zoo Code / Roo Code</span><span class="ok" data-i="p.tested2">tested via bridge</span></div>
+        <div><span data-i="p.others">Other coding tools</span><span class="warn" data-i="p.untested">not tested</span></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section id="opus"><div class="wrap">
+  <div class="card spot opus reveal">
+    <div class="l">
+      <div class="eyebrow" data-i="o.eyebrow">Opus watch</div>
+      <h2 data-i="o.title">Know when Opus goes live</h2>
+      <p class="sub" data-i="o.sub">agentrouter.org turns the Claude Opus family on and off on a schedule. ClodKey's model check (⟳) shows what the station serves right now — no more requests burned on a model that is off.</p>
+    </div>
+    <div class="r">
+      <div class="clock"><span>⟳ model check</span><span id="clk">--:--:--</span></div>
+      <div class="mrow"><span>claude-sonnet</span><span class="st on">OK</span></div>
+      <div class="mrow" id="opusRow"><span>claude-opus</span><span class="st off" id="opusSt">off</span></div>
+      <div class="mrow"><span>claude-haiku</span><span class="st on">OK</span></div>
+      <div class="mrow"><span>deepseek</span><span class="st on">OK</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <div class="reveal"><div class="eyebrow" data-i="a.eyebrow">About</div>
+  <h2 data-i="a.title">From scripts to bridges</h2>
+  <p class="sub" data-i="a.sub">I like tools that start with one click and don't trust magic without logs.</p></div>
+  <div class="tl reveal"><div class="bar"></div>
+    <div class="step" data-n="01"><h4 data-i="a.s1">Scripts</h4><p data-i="a.s1p">Excel reports, parsing, killing routine.</p></div>
+    <div class="step" data-n="02"><h4 data-i="a.s2">Telegram bots</h4><p data-i="a.s2p">Small services people use every day.</p></div>
+    <div class="step" data-n="03"><h4 data-i="a.s3">Services</h4><p data-i="a.s3p">Databases, Docker, deploys.</p></div>
+    <div class="step" data-n="04"><h4 data-i="a.s4">AI bridges</h4><p data-i="a.s4p">Relays and key managers for AI coding tools.</p></div>
+  </div>
+  <div class="stack reveal">
+    <span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">Django</span><span class="chip">Node.js</span><span class="chip">JavaScript</span><span class="chip">PowerShell</span><span class="chip">PostgreSQL</span><span class="chip">SQLite</span><span class="chip">Docker</span><span class="chip">Linux</span><span class="chip">Git</span><span class="chip">VS Code</span>
+  </div>
+</div></section>
+
+<section id="coffee"><div class="wrap">
+  <div class="card spot coffee reveal">
+    <div class="cup" data-coffee title="☕">
+      <svg viewBox="0 0 120 120" aria-hidden="true">
+        <g class="steam"><path d="M44 30c-6-8 6-12 0-20"/><path d="M60 30c-6-8 6-12 0-20"/><path d="M76 30c-6-8 6-12 0-20"/></g>
+        <defs><clipPath id="mug"><path d="M24 40h72v38a24 24 0 0 1-24 24H48a24 24 0 0 1-24-24z"/></clipPath></defs>
+        <path d="M96 52h6a12 12 0 0 1 0 24h-6" fill="none" stroke="#18181b" stroke-width="6"/>
+        <path d="M24 40h72v38a24 24 0 0 1-24 24H48a24 24 0 0 1-24-24z" fill="#fff"/>
+        <g clip-path="url(#mug)"><rect class="fill" x="20" y="52" width="80" height="60" fill="#7a4a2a"/><rect class="fill" x="20" y="52" width="80" height="5" fill="#b07a4f"/></g>
+        <path d="M24 40h72v38a24 24 0 0 1-24 24H48a24 24 0 0 1-24-24z" fill="none" stroke="#18181b" stroke-width="4"/>
+        <rect x="14" y="104" width="92" height="6" rx="3" fill="#18181b"/>
+      </svg>
+    </div>
+    <div>
+      <div class="eyebrow" data-i="c.eyebrow">Support</div>
+      <h2 data-i="c.title">Fuel the next bridge</h2>
+      <p class="sub" data-i="c.sub">If ClodKey saved you time, a coffee keeps the next tool coming. Every cup fills the meter.</p>
+      <div class="meter" id="meter"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="cta" style="margin-top:0"><button class="btn red mag" data-coffee>☕ <span data-i="cta.coffee">Buy me a coffee</span></button></div>
+      <p class="addr-s">ETH · ERC20 — 0x5015…6Aa64f2</p>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <span>© <span id="yr">2026</span> Valentin · Apex4Coder</span>
+  <a class="fueled" href="https://linux.sb" target="_blank" rel="noopener"><span>Fueled by</span><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAASFBMVEUPDxCXl5j+/v5jY2Tf3tv9rwn5+fnz2qEDAwP3yWerq6sREREFBQX29vZSUlL4v0J/f39/f4CBgH+/xtH6+vvu7u0AAABmZmb3lEZQAAAAGHRSTlP6+g/77/+T/5n/DCViYp//Av/+//3+AP4DB7r+AAABUElEQVR42nVTi3LEIAgENOZ5j7ao//+nBdQYcy2TiQm7rqgspB7HAhbLcUmCvUmegJcIZMlG2FJanHM5u+wMl+/F0oVAidDQazgk0wDD+c8wBlQ8RvYOUMeRAUTkJW04OPs6w29vAkpBp0VG2aAqXBkhEegCipuAaXWGx01qCGUWdrwxooOn1MBnBV8NbwSZQ/AodQ0ClSEK+QHhFMCOx6aQA5Q9ikD2PvIHwUOshOzRYeRrmUpgKL8Rvc8Z/TrzQHAMZwKFME/TzHdCY0T8EbwSuC9xPZx1mla+Fxn65tZpWEHPAZ7loCznp1FAFeCoR6013AWkbsStXVZkqzDG+32X664CK9/6gbWjRMIa7jVssTeMtZwC82u+6bMXEP5v6tq0zRbO4tMYYMbaBcPvaioNHXazFhRrjs6s7qRuXom9WrsafB/dnUjYe7f/XjIav59DPBDNP34fAAAAAElFTkSuQmCC"><b>LINUX SB</b></a>
+</div></footer>
+
+<div class="ov" id="ov" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mt">
+    <button class="x" id="x" aria-label="Close"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 2l10 10M12 2L2 12" stroke="#18181b" stroke-width="2" stroke-linecap="round"/></svg></button>
+    <div style="font-size:34px">☕</div>
+    <h3 id="mt" data-i="m.title">Buy me a coffee</h3>
+    <span class="net">Ethereum · ERC20</span><br>
+    <svg class="qr" id="qr" role="img" aria-label="QR code for the wallet address"></svg>
+    <div class="addr"><code id="addr">0x50153B5CC3eae905291d62602226C80896Aa64f2</code><button class="copy" id="copy" data-i="m.copy">Copy</button></div>
+    <p class="warnline" data-i="m.warn">Ethereum (ERC20) only. Other networks = lost funds.</p>
+    <div class="links2"><a href="https://etherscan.io/address/0x50153B5CC3eae905291d62602226C80896Aa64f2" target="_blank" rel="noopener">Etherscan ↗</a><a href="https://t.me/GPCProject" target="_blank" rel="noopener" data-i="m.thanks">Say thanks ↗</a></div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
